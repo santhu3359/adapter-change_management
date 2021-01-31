@@ -125,7 +125,7 @@ function post(serviceNowTable, callback) {
       pass: options.password,
     },
     baseUrl: options.url,
-    uri: '/api/now/table/${serviceNowTable}',
+    uri: `/api/now/table/${serviceNowTable}`,
   };
 
   // Send Request to ServiceNow.
@@ -176,6 +176,5 @@ function main() {
     console.log(`\nResponse returned from POST request:\n${JSON.stringify(data)}`)
   });
 }
-
 // Call main to run it.
 main();
